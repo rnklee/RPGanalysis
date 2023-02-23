@@ -1,0 +1,6 @@
+Referer: https://store.steampowered.com/search/?category1=998&filter=topsellers
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en
+User-Agent: Scrapy/2.8.0 (+https://scrapy.org)
+Accept-Encoding: gzip, deflate, br
+Cookie: steamCountry=US%7C52309ddb569944ae414badfb2ee64577; browserid=2926814119808709972; sessionid=5423fb685e7d2e8bda8fccb6; recentapps=%7B%221466860%22%3A1677186619%2C%221085660%22%3A1677186616%7D
