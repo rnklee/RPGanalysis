@@ -1,4 +1,6 @@
 import logging
+import re
+import pdb
 
 from scrapy.spiders import CrawlSpider, Rule
 from scrapy.linkextractors import LinkExtractor
@@ -25,7 +27,7 @@ class ProductSpider(CrawlSpider):
 			),
 		Rule(
 			LinkExtractor(
-				allow = 'page=(d+)',
+				allow = 'page=',
 				restrict_css = '.search_pagination_right'
 				)
 			)
@@ -37,26 +39,24 @@ class ProductSpider(CrawlSpider):
 		if '/agecheck/app' in response.url:
 			logger.debug(f"Form-type age check triggered for {response.url}.")
 
-			form = response.css('#agegate_box form')
-
-			action = form.xpath('@action').extract_first()
-			name = form.xpath('input/@name').extract_first()
-			value = form.xpath('input/@value').extract_first()
+			sessionID = response.xpath('//script[contains(.,"g_sessionID = ")]/text()').extract()[0]
+			sessionID = re.findall('g_sessionID = (.+?);', sessionID)[0]
 
 			formdata = {
-				name: value,
+				'sessionID': sessionID,
 				'ageDay': '23',
 				'ageMonth': '10',
 				'ageYear': '1977'
 			}
 
-			yield FormRequest(
-				url = action,
-				method = 'POST',
-				formdata = formdata,
-				callback = self.parse_product
-			)
+			app_number = re.findall('/[0-9]+/', response.url)[0]
+			app_number = app_number.replace('/', '')
+			url = 'https://store.steampowered.com/app/' + app_number
 
+			yield FormRequest(
+				url = url, 
+				callback = self.parse_product,
+				cookies = {'wants_mature_content':'1'})
 		else:
 			yield self.load_product(response) 
 			
@@ -64,7 +64,18 @@ class ProductSpider(CrawlSpider):
 	def load_product(self, response):
 		loader = ProductLoader(item = ProductItem(), response = response)
 		loader.add_css('name', '.apphub_AppName ::text')
-		loader.add_css('price', 'div.discount_original_price ::text')
+
+		no_discount_price = response.css('div.game_purchase_price ::text').extract_first() # returns price when the game is not on sale and there's no discount_original_price.	
+		discount_price = response.css('div.discount_original_price ::text').extract_first() # despite its name should return the original price if the game's currently on sale.
+		price = no_discount_price or discount_price
+		#pdb.set_trace()
+
+		if not price:
+			logger.debug(f'No price found for {response.url}.')
+		if '$' not in price:
+			price = '$0.00' 
+		price = re.findall(r'\$[0-9]*\.[0-9]{2}', price)[0]
+		loader.add_value('price', price)
 		loader.add_css('tags', 'a.app_tag ::text')
 
 		return loader.load_item()

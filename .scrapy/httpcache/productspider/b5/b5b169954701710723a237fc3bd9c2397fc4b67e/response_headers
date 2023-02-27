@@ -1,0 +1,6 @@
+Content-Length: 0
+Server: nginx
+Content-Type: text/html; charset=UTF-8
+Location: https://store.steampowered.com/
+Strict-Transport-Security: max-age=300
+Date: Fri, 24 Feb 2023 03:14:12 GMT

@@ -2,16 +2,23 @@
 #
 # See documentation in:
 # https://docs.scrapy.org/en/latest/topics/spider-middleware.html
+import logging
+import os
+import re
+import pdb
 
 from scrapy import signals
 
 # useful for handling different item types with a single interface
 from itemadapter import is_item, ItemAdapter
 
-# Needed for circumventing the age checkpoint issue.
+# Needed for removing snr from the fingerprints.
 from w3lib.url import url_query_cleaner
 from scrapy.dupefilters import RFPDupeFilter
+from scrapy.utils.request import request_fingerprint
 
+
+logger = logging.getLogger(__name__)
 
 class SteamSpiderMiddleware:
     # Not all methods need to be defined. If a method is not defined,
@@ -107,11 +114,10 @@ class SteamDownloaderMiddleware:
         spider.logger.info("Spider opened: %s" % spider.name)
 
 
-# To circumvent the age checkpoint.
+# Ignore snr.
 class SteamDupeFilter(RFPDupeFilter):
     def request_fingerprint(self, request):
         url = url_query_cleaner(request.url, ['snr'], remove = True)
         request = request.replace(url = url)
         return super().request_fingerprint(request)
-
 

@@ -1,0 +1,10 @@
+Content-Length: 34
+Server: nginx
+Content-Type: application/json; charset=utf-8
+Expires: Mon, 26 Jul 1997 05:00:00 GMT
+Cache-Control: no-cache
+X-Frame-Options: DENY
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Strict-Transport-Security: max-age=300
+Date: Fri, 24 Feb 2023 17:46:31 GMT

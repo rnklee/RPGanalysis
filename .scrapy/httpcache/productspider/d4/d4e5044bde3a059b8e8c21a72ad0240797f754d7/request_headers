@@ -1,0 +1,7 @@
+Content-Type: application/x-www-form-urlencoded
+Referer: https://store.steampowered.com/agecheck/app/230410/?snr=1_7_7_7000_150_1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en
+User-Agent: Scrapy/2.8.0 (+https://scrapy.org)
+Accept-Encoding: gzip, deflate, br
+Cookie: steamCountry=US%7C52309ddb569944ae414badfb2ee64577; browserid=2926814119808709972; sessionid=5423fb685e7d2e8bda8fccb6; recentapps=%7B%22275850%22%3A1677186622%2C%222081400%22%3A1677186619%2C%22730%22%3A1677186616%7D
