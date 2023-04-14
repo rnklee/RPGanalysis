@@ -12,3 +12,6 @@ The analysis breaks down into the following steps:
 - preprocessing - for successful tag-based analysis, we focus on games with enough user data (reviews) and tags. 
 - PCA - of course, there are redundancies in tags (for example, Action and Action RPG) and to remove this, we perform PCA on vectorized the tag lists.
 - K-Means - to see if there is any obvious clustering, we then perform K-Means on PCA scores.
+
+## Clustering
+![](images/cluster-pie.png)
