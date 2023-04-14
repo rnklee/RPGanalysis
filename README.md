@@ -1,10 +1,10 @@
 # RPGanalysis
 Using a webscraper for a popular PC game storefront (Steam), collected data of 10,000+ RPG games. The collected attributes includes:
--name,
--tags,
--number of reviews and positive reviews,
--release date
--url (mostly for debugging).
+- name,
+- tags,
+- number of reviews and positive reviews,
+- release date
+- url (mostly for debugging).
 Here, tags are descriptive keywords assigned to each game by developers, Steam moderators, and most importantly users. Since these are user-defined, it provides a more user-oriented and organic way of classifying games beyond already existing genres. Thus, by analysing tags, we aim to investigate into possible sub-genres of RPG games.
 
 ## Methodology
