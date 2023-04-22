@@ -22,7 +22,7 @@ These clusters presents a finer classification of the RPG games (Action RPG, Adv
 Especially since tags provide more information than simply . This can be observed in . Even if these two clusters both show action-adventure RPG games, depending on its setting and subject matter, it further  into two genres: action-adventure games with fantasy theme and action-adventure games with sci-fi theme.
 
 Also for the roguelike games,
-<img source = "https://github.com/rnklee/RPGanalysis/tree/main/images/action-tags.png", "width" = 100>
+<img src = "images/action-tags.png", "width" = 100>
 
 ## Trend Analysis
 ![](images/trend-quarterly-roguelike.png | width=100)
