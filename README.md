@@ -17,6 +17,6 @@ The analysis breaks down into the following steps:
 By looking at both inertia and sihouette score, 14 has been selected as the number of clusters.
 ![](images/cluster-pie.png)
 
-These clusters presents a finer classification of the RPG games (Action RPG, Adventure RPG, Casual, JRPG, Party-based RPG, Roguelike, Strategy RPG). For example, by looking at clusters with 'action' tags, we obtain a finer classification of Action RPG games into following sub-categories: action-roguelike, action-adventure, action-platformer, action-MMORPG, action-FPS. Here, each bar shows the percentage of 15 most common tags for each cluster with a representative game in the title.
+These clusters presents a finer classification of the RPG games (Action RPG, Adventure RPG, Casual, JRPG, Party-based RPG, Roguelike, Strategy RPG). For example, by looking at clusters with 'action' tags, we obtain a finer classification of Action RPG games into following sub-categories: action-roguelike, action-adventure, action-platformer, action-MMORPG, action-adventure (FPS). Here, each bar shows the percentage of 15 most common tags for each cluster with a representative game in the title.
 ![](images/action-tags.png)
-
+Especially since tags provide more information than simply . This can be observed in . Even if these two clusters both show action-adventure RPG games, depending on its setting and subject matter, it further  into two genres: action-adventure games with fantasy theme and action-adventure games with sci-fi theme.
