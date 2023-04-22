@@ -25,6 +25,6 @@ Also for the roguelike games,
 ![](images/roguelike-tags.png)
 
 ## Trend Analysis
-![](images/trend-yearly.png)
-
+![](images/trend-quarterly-roguelike.png)
+![](images/trend-yearly-roguelike.png)
 
