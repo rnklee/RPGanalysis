@@ -19,4 +19,5 @@ By looking at both inertia and sihouette score, 14 has been selected as the numb
 
 These clusters presents a finer classification of the RPG games (Action RPG, Adventure RPG, Casual, JRPG, Party-based RPG, Roguelike, Strategy RPG). For example, this clustering  
 ![](images/action-tags.png)
+
 Here, each bar shows the percentage of 15 most common tags for each cluster with a representative game in the title.
