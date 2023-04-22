@@ -14,5 +14,8 @@ The analysis breaks down into the following steps:
 - K-Means - to see if there is any obvious clustering, we then perform K-Means on PCA scores.
 
 ## Clustering
+By looking at both inertia and sihouette score, 14 has been selected as the number of clusters.
 ![](images/cluster-pie.png)
+
+
 ![](images/cluster-tags.png)
