@@ -35,7 +35,7 @@ Of course, each cluster follows different pulicaton trends. The prime example of
 
 <img src="images/roguelike-quarterly-trends.png" width=80% height=80%>
 
-The difference can be observed from their yearly publication from past two decades as well.
+The difference in their publication trends can be observed in the following plots, which show the number of publications per year from past two decades.
 <img src="images/roguelike-yearly-trends.png" width=80% height=80%>
 
 Again, plots for all 14 clusters can be found in the [Jupyter notebook](RPG_Clustering_and_Analysis.ipynb) or in [images](images).
