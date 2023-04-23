@@ -31,7 +31,7 @@ Since tags provide information beyond the given genres, we obtain clusters that 
 Plots for all 14 clusters can be found in the [Jupyter notebook](RPG_Clustering_and_Analysis.ipynb) or in [images](images).
 
 ## Trend Analysis
-Of course, each clusters follows different pulicaton trends. The prime example of this is shown in the following plots which tracks the number of pulication from each quarter from past decade. Although both clusters exhibit increase in the number of publication per quarter during the past decade, Cluster 2 does not exhibit the rapid growth in 2022 as Cluster 8 does.
+Of course, each cluster follows different pulicaton trends. The prime example of this is shown in the following plots which track the number of pulications per quarter from past decade. Although plots for Cluster 2 and Cluster 8 both indicate an increase in the number of publication per quarter during the past decade, our analysis showcases an explosive growth of Cluster 8 during the period 2020-2022.
 
 <img src="images/roguelike-quarterly-trends.png" width=80% height=80%>
 
