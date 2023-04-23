@@ -28,7 +28,7 @@ Going further, by looking at clusters with a high percentage of games with the A
 
 Since tags provide information beyond the given genres, we obtain clusters that are more refined than subgenres. For example, Cluster 4 and Cluster 10 both exhibits games that would fall under the subgenre of Action-Adventure RPG. However, Cluster 4 contains fantasy themed games (for example, The Witcher or Hogwarts Legacy) whereas Cluster 10 contains sci-fi themed FPS games (for example, Prey or S.T.A.L.K.E.R series) as seen above.
 
-Plots for all 14 clusters can be found in the [Jupyter notebook](RPG_Clustering_and_Analysis.ipynb) or in [images](images).
+Such analysis applies equally well to other genres. Plots for all 14 clusters can be found in the [Jupyter notebook](RPG_Clustering_and_Analysis.ipynb) or in [images](images).
 
 ## Trend Analysis
 Of course, each cluster follows different pulicaton trends. The prime example of this is shown in the following plots which track the number of pulications per quarter from the past decade. Although plots for Cluster 2 and Cluster 8 both indicate an increase in the number of publication per quarter during the past decade, our analysis showcases an explosive growth of Cluster 8 during the period 2020-2022.
