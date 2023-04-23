@@ -11,7 +11,7 @@ Here, tags are descriptive keywords assigned to each game by developers, Steam m
 ## Methodology
 The analysis breaks down into the following steps.
 - Preprocessing - For successful tag-based analysis, we focus on games with enough user data (measured by number of reviews) and tags. 
-- PCA - To remove redundancies in tags (for example, Action and Action RPG), we perform PCA on vectorized the tag lists after centering (but not scaling). This yielded better classification result than the more conventional MCA on categorical variables.
+- PCA - To remove redundancies in tags (for example, Action and Action RPG), we perform PCA on the vectorized tag lists after centering (but not scaling). This yielded better classification results than the more conventional MCA on categorical variables.
 - K-Means - To see if there is any obvious clustering, we then perform K-Means on the transformed vectors.
 
 ## Clustering
