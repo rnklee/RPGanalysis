@@ -3,7 +3,7 @@ Using a webscraper for a popular PC game storefront (Steam), collected data of 1
 - name,
 - tags,
 - number of reviews and positive reviews,
-- release date
+- release date,
 - url (mostly for debugging).
 
 Here, tags are descriptive keywords assigned to each game by developers, Steam moderators, and most importantly users. Tags usually contains more information about a game than genres ascribed to games. Also, being user-defined, it provides a more user-oriented description of games. The goal of this project is to acheive a finer, more user-oriented classification of RPG games using the tags.
@@ -18,7 +18,7 @@ The analysis breaks down into the following steps:
 After looking at both inertia and sihouette score, we chose 14 as the number of clusters.
 <img src="images/cluster-pie.png">
 
-Currently, there are seven subgenres of RPG games presented on the online storefront: Action RPG, Adventure RPG, Casual, JRPG, Party-based RPG, Roguelike, Strategy RPG. The returned clusters present a finer classification than these subgenres. For example, by looking at clusters with "action" tags, we obtain the following sub-categories of Action RPG games: Cluster 4 (Action, Adventure, Fantasy), Cluster 8 (Action, Roguelike), Cluster 9 (Action, Platformer, Metrovania), and Cluster 10 (Action, Adventure, Sci-Fi). Here, each bar shows the percentage of 15 most common tags for each cluster and the titles shows names of representative games in each cluster.
+Currently, there are seven subgenres of RPG games presented on the online storefront: Action RPG, Adventure RPG, Casual, JRPG, Party-based RPG, Roguelike, Strategy RPG. The returned clusters present a finer classification than these subgenres. For example, by looking at clusters with Action tags, we obtain the following sub-categories of Action RPG games: Cluster 4 (Action, Adventure, Fantasy), Cluster 8 (Action, Roguelike), Cluster 9 (Action, Platformer, Metrovania), and Cluster 10 (Action, Adventure, Sci-Fi). Here, each bar shows the percentage for each of the 15 most common tags and the titles shows the cluster number along with the names of representative games (i.e. selected with ) in each cluster.
 
 <img src="images/action-tags.png" width=80% height=80%>
 
@@ -31,11 +31,11 @@ As another example, Cluster 2 and Cluster 8 samples Rogulike games of different 
 Plots for all 14 clusters can be found in the [Jupyter notebook](RPG_Clustering_and_Analysis.ipynb) or in [images](images).
 
 ## Trend Analysis
-Of course, each clusters follows different pulicaton trends. The prime example of this is shown in the following plots which tracks the number of pulication from each quarter from past decade. Although both clusters exhibit increase in the number of publication per quarter, it is evident that Cluster . In the following plot, we can observe that the increase  
+Of course, each clusters follows different pulicaton trends. The prime example of this is shown in the following plots which tracks the number of pulication from each quarter from past decade. Although both clusters exhibit increase in the number of publication per quarter during the past decade, Cluster 2 does not exhibit the rapid growth in 2022 as Cluster 8 does.
 
 <img src="images/roguelike-quarterly-trends.png" width=80% height=80%>
 
-The difference becomes more evident when we compare their yearly publication from past two decades:
+The difference can be observed from their yearly publication from past two decades as well.
 <img src="images/roguelike-yearly-trends.png" width=80% height=80%>
 
 Again, plots for all 14 clusters can be found in the [Jupyter notebook](RPG_Clustering_and_Analysis.ipynb) or in [images](images).
