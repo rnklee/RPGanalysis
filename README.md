@@ -18,7 +18,7 @@ The analysis breaks down into the following steps.
 After looking at both inertia and silhouette score, we chose 14 as the number of clusters.
 <img src="images/cluster-pie.png">
 
-Currently, there are seven subgenres of RPG games presented on the online storefront: Action RPG, Adventure RPG, Casual, JRPG, Party-based RPG, Roguelike, Strategy RPG. The returned clusters present a subset of meaningful genre-combinations, thus creating a useful collection of subgenres. As an example, Cluster 2 and Cluster 8 samples Rogulike games of different flavors. It can be checked in the following graphs that Cluster 2 consists of Roguelike-Strategy games such as Slay the Spire or Darkest Dungeon whereas Cluster 8 consists of Action-Roguelike games such as Binding of Issac and Hades.
+Currently, there are seven subgenres of RPG games presented on the online storefront: Action RPG, Adventure RPG, Casual, JRPG, Party-based RPG, Roguelike, Strategy RPG. The returned clusters present a subset of meaningful genre-combinations, thus creating a useful collection of subgenres. As an example, Cluster 2 and Cluster 8 samples Roguelike games of different flavors. It can be checked in the following graphs that Cluster 2 consists of Roguelike-Strategy games such as Slay the Spire or Darkest Dungeon whereas Cluster 8 consists of Action-Roguelike games such as Binding of Issac and Hades.
 
 <img src="images/roguelike-tags.png" width=80% height=80%>
 
